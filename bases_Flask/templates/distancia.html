@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Distancia</h1>
+   <form action="/distancia" method="POST">
+  <input type="number" step="any" name="x1" placeholder="x1" required>
+  <input type="number" step="any" name="y1" placeholder="y1" required>
+  <input type="number" step="any" name="x2" placeholder="x2" required>
+  <input type="number" step="any" name="y2" placeholder="y2" required>
+  
+  <button type="submit">Calcular Distancia</button>
+</form>
+
+{% if res is not none %}
+  <h3>Distancia: {{ res }}</h3>
+{% endif %}
+</body>
+</html>
